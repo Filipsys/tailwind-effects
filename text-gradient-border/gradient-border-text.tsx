@@ -18,7 +18,7 @@ const SpecialChar = (props: { char: string }) => {
 };
 
 function App() {
-  const sentence = "Hey";
+  const sentence = "Font";
 
   return (
     <>
