@@ -1,19 +1,31 @@
 import "./index.css";
 
+const SpecialChar = (props: { char: string }) => {
+  return (
+    <span className="grid place-items-center text-[32rem] uppercase tracking-widest">
+      <p
+        className="inline-block size-fit select-none leading-none text-transparent [grid-area:1/1]"
+        style={{ WebkitTextStroke: "1px white" }}
+      >
+        {props.char}
+      </p>
+
+      <p className="inline-block size-fit select-text bg-gradient-to-b from-white to-60% bg-clip-text leading-none text-transparent [grid-area:1/1]">
+        {props.char}
+      </p>
+    </span>
+  );
+};
+
 function App() {
+  const sentence = "Hey";
+
   return (
     <>
-      <div className="grid h-screen w-screen place-items-center bg-slate-700 font-serif">
-        <p
-          className="size-fit text-[14rem] font-extrabold uppercase leading-none tracking-widest text-transparent [grid-area:1/1]"
-          style={{ WebkitTextStroke: "1px white" }}
-        >
-          Special
-        </p>
-
-        <p className="size-fit bg-gradient-to-b from-white to-70% bg-clip-text text-[14rem] font-extrabold uppercase leading-none tracking-widest text-transparent [grid-area:1/1]">
-          Special
-        </p>
+      <div className="font-DMSerifDisplay flex h-screen w-screen flex-row justify-center gap-2 bg-[#dce2e3]">
+        {sentence.split("").map((char) => (
+          <SpecialChar char={char} />
+        ))}
       </div>
     </>
   );
