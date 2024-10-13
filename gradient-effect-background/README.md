@@ -1,1 +1,1 @@
-<img src="https://github.com/Filipsys/tailwind-effects/blob/37643df890385012ca24ffaa1380c312e7c87c3d/text-gradient-border/Capture1.png" />
+<img src="https://github.com/Filipsys/tailwind-effects/blob/ec8c47d6b7b0ccd504aecab6b5ea9f6585ba946c/gradient-effect-background/Capture2.png" />
